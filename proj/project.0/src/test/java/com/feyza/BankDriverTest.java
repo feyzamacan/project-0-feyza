@@ -20,7 +20,7 @@ public class BankDriverTest
     
     @Test
     public void test_username_exists() {
-      String username = "jbki5";
+      String username = "fey0";
   
       Connection con = null;
       try {

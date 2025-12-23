@@ -9,7 +9,7 @@ import java.util.*;
 import java.sql.*;
 import java.io.*;
 
-//for completely static class, use private constructor 
+
 public class Bank {
   public static final String CREATE_USR = "Username: ";
   public static final String CREATE_P = "Password: ";

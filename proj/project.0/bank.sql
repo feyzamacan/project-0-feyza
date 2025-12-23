@@ -110,10 +110,10 @@ end;
 
 
 insert into users (username, password, firstname, lastname, balance) 
-values('jbki', '123', 'jerry', 'kim', 499);
+values('fey', '123', 'feyza', 'macan', 500);
 
 insert into users (username, password, firstname, lastname, balance) 
-values('jbki5', '123', 'jerry', 'kim', 0);
+values('fey0', '123', 'feyza', 'macan', 0);
 
 insert into users (username, password, firstname, lastname, balance) 
 values('username2', '123', 'first2', 'last2', 0);
@@ -126,8 +126,8 @@ values('username4', '123', 'first3', 'last3', 0);
 commit;
 
 begin
-  add_balance('jbki5', 5000);
-  add_balance('jbki', -300);
-  add_balance('jbki', 10);
+  add_balance('fey0', 5000);
+  add_balance('fey', -300);
+  add_balance('fey', 10);
 end;
 /
