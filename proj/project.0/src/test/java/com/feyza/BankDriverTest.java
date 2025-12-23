@@ -1,9 +1,9 @@
-package com.ibbanker.main;
-import com.ibbanker.utils.Bank;
+package com.feyza.main;
+import com.feyza.utils.Bank;
 import java.sql.*;
-import com.ibbanker.dao.*;
-import com.ibbanker.models.*;
-import com.ibbanker.utils.Connect;
+import com.feyza.dao.*;
+import com.feyza.models.*;
+import com.feyza.utils.Connect;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
