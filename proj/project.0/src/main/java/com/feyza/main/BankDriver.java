@@ -1,17 +1,17 @@
 package com.feyza.main;
-import org.apache.logging.log4j.Logger;
+//import org.apache.logging.log4j.Logger;
 
 import com.feyza.models.User;
 import com.feyza.utils.Bank;
 import com.feyza.utils.Connect;
 
-import org.apache.logging.log4j.LogManager;
+//import org.apache.logging.log4j.LogManager;
 import java.io.Console;
 import java.nio.*;
 import java.sql.*;
 
 public class BankDriver {
-  private static final Logger log = LogManager.getLogger(com.feyza.main.BankDriver.class.getName());
+  //private static final Logger log = LogManager.getLogger(com.feyza.main.BankDriver.class.getName());
 
   public static void main(String ... args) throws SQLException {
     boolean done = false;
@@ -28,10 +28,15 @@ public class BankDriver {
           doActions(); 
           break;
         case "3": 
-          log.info("bye");
+          //log.info("bye");
+          System.out.println("bye");
+
+
+
           done = true; 
           break;
-        default: log.info("What would you like to do?");
+        //default: log.info("What would you like to do?");
+        System.out.println("What would you like to do?");
       } 
     }
   }
@@ -42,7 +47,8 @@ public class BankDriver {
     try (Connection con = Connect.getConnection()) {
       User user = Bank.login(con, username, password);
       if(user == null) {
-        log.info(Bank.BAD_LOGIN);
+        //log.info(Bank.BAD_LOGIN);
+        System.out.println(Bank.BAD_LOGIN);
       }
       
       while(user != null) {
@@ -62,12 +68,14 @@ public class BankDriver {
             user = null;
             break;
           default:
-           log.info("Invalid selection"); 
+            //log.info("Invalid selection"); 
+            System.out.println("Invalid selection");
         }
       }
     } //end loggedinMenu
     catch(SQLException e) {
-      log.info("Connection failed");
+      //log.info("Connection failed");
+      System.out.println("Connection failed");
     }
 
   }

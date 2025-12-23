@@ -128,6 +128,6 @@ commit;
 begin
   add_balance('fey0', 5000);
   add_balance('fey', -300);
-  add_balance('fey', 10);
+  add_balance('fey', 10); //ex
 end;
 /
