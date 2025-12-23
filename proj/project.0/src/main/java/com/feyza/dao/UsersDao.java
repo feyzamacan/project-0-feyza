@@ -1,0 +1,12 @@
+package com.feyza.dao;
+import java.sql.*;
+
+import com.feyza.models.User;
+
+public interface UsersDao {
+  public User getUser(Connection con, String username) throws SQLException;
+  public int insertUser(Connection con, User u) throws SQLException;
+  public int updateUser(Connection con, User u) throws SQLException;
+  public int deleteUser(Connection con, User u) throws SQLException;
+  public int updateUser(Connection con, User u, float balance) throws SQLException;
+}
