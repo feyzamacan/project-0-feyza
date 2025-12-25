@@ -1,7 +1,7 @@
 package com.feyza.utils;
-import com.nboarizona.models.User;
-import com.nboarizona.utils.Connect;
-import com.nboarizona.dao.*;
+import com.feyza.models.User;
+import com.feyza.utils.Connect;
+import com.feyza.dao.*;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 import java.io.Console;
@@ -28,7 +28,7 @@ public class Bank {
   public static final String E_WITHDRAW = "Something went wrong";
   private static UsersDaoImp uDao = new UsersDaoImp();
   //table identifiers
-  private static Logger log = LogManager.getLogger(com.nboarizona.utils.Bank.class.getName());
+  private static Logger log = LogManager.getLogger(com.feyza.utils.Bank.class.getName());
   private Bank() {
     super();
   }
